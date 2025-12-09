@@ -1,0 +1,36 @@
+# ---------- Core LangChain stack ----------
+langchain>=0.3.0,<0.4.0
+langchain-community>=0.3.0,<0.4.0
+langchain-text-splitters>=0.3.0,<0.4.0
+
+# ---------- Vector DB ----------
+chromadb>=0.5.0,<0.6.0
+
+# ---------- Embeddings ----------
+sentence-transformers>=3.0.0,<4.0.0
+
+# ---------- LLM / Transformers ----------
+# langchain_core internally imports GPT2TokenizerFast from transformers
+transformers>=4.45.0,<5.0.0
+
+# Local LLM wrapper (needed for current app.py which uses LlamaCpp)
+llama-cpp-python>=0.2.90,<0.3.0
+
+# ---------- Torch (works with Python 3.12) ----------
+# CPU build by default; if you want CUDA, install the corresponding wheel manually
+torch>=2.5.0,<3.0.0
+
+# ---------- PDF loading ----------
+pypdf>=4.0.0,<6.0.0
+
+# ---------- Web UI ----------
+streamlit
+
+# ---------- Utilities ----------
+tqdm
+python-dotenv>=1.0.0,<2.0.0
+
+# Ollama client (optional helper)
+ollama
+
+# python 3.12.12
