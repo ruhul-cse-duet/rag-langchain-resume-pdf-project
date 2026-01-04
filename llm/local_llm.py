@@ -1,7 +1,7 @@
 # llm/local_llm.py
 from functools import lru_cache
 
-from langchain_community.llms import Ollama
+from langchain_community.llms import Ollama # loade lanchain ollama model
 
 from config import OLLAMA_MODEL, OLLAMA_BASE_URL
 
