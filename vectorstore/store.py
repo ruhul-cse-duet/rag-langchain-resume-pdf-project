@@ -37,6 +37,6 @@ def build_or_load_vectorstore(
         )
 
     return Chroma(
-        embedding_function=embedding,
+        embedding_function=embedding, # embedding return after vectorize
         persist_directory=persist_directory,
     )
